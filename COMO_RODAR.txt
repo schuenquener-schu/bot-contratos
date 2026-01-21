@@ -1,0 +1,23 @@
+PASSO A PASSO PARA RODAR O ROBÔ DE AUTOMAÇÃO
+
+Siga estes passos sempre que precisar reiniciar o robô:
+
+1. ABRIR O TERMINAL
+   - Pressione a tecla Windows.
+   - Digite "cmd" ou "PowerShell" e abra o programa.
+
+2. ENTRAR NA PASTA DO ROBÔ
+   - Copie e cole o comando abaixo no terminal e aperte ENTER:
+     cd c:\Users\04091448194\.gemini\antigravity\scratch\email-automation-bot
+
+3. INICIAR O ROBÔ
+   - Digite o comando abaixo e aperte ENTER:
+     node index.js
+
+4. O QUE VAI ACONTECER
+   - O robô vai começar a carregar.
+   - Vai aparecer "Iniciando Robô de Contratos...".
+   - Depois de alguns segundos, vai aparecer "WhatsApp Conectado com Sucesso!".
+   - Ele enviará uma mensagem de teste no grupo "Programação" confirmando que está ativo.
+
+DICA: Não feche a janela do terminal enquanto quiser que o robô continue funcionando. Se fechar, o robô para.
