@@ -7,15 +7,17 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-# Instalação padrão, rápida e segura
+# Instalação limpa das dependências
 USER root
 RUN npm install
+# Garante permissões corretas
 RUN chown -R pptruser:pptruser /usr/src/app
 USER pptruser
 
 COPY --chown=pptruser:pptruser . .
 
-# Render detecta a porta automaticamente, mas 3000 é um bom padrão
+# Importante: O Render define a porta automaticamente na variável PORT
+# mas expomos a 3000 como padrão
 EXPOSE 3000
 
 CMD ["node", "index.js"]
